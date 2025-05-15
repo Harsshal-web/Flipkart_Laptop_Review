@@ -5,6 +5,9 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 
 # Set page config
+
+
+
 st.set_page_config(page_title="Flipkart Laptop Search", layout="centered")
 
 # Load model
@@ -14,7 +17,7 @@ def load_model():
 
 model = load_model()
 
-# Load and prepare data
+# Load and prepare Data
 @st.cache_data
 def load_data():
     df = pd.read_csv("Flipkart_Laptop_Review.csv")
